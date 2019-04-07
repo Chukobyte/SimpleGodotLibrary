@@ -9,7 +9,6 @@ var _list : Array
 var _loops : bool
 
 func _init(list_array : Array, loops = true) -> void:
-	
 	_list = list_array
 	_loops = loops
 
