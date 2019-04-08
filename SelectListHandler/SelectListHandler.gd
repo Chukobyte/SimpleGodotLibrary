@@ -1,6 +1,6 @@
 #SelectListHandler.gd
 
-extends Object
+extends Reference
 
 class_name SelectListHandler
 

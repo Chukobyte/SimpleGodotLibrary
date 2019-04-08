@@ -1,12 +1,12 @@
 #Array2D.gd
-extends Object
+extends Reference
 
 class_name Array2D
 
 var _array := []
 
 func _init(width : int, height : int, initial_values = null) -> void:
-	_create_2d_array(width, height, initial_value)
+	_create_2d_array(width, height, initial_values)
 
 func _create_2d_array(width : int, height : int, value) -> void:
 	for y in range(height):
@@ -42,7 +42,7 @@ func empty() -> bool:
 
 func duplicate() -> Array2D:
 	var new_array : Array2D
-	new_array = Array2D.new(width(), height())
+	new_array = (load(get_script().resource_path) as GDScript).new(width(), height()) as Array2D
 	for x in width():
 		for y in height():
 			new_array.set_value(x, y, _array[y][x])
