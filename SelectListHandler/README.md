@@ -1,8 +1,6 @@
 # Simple Godot SelectListHandler
 ---------------------
 
-*Version 1.0.0*
-
 ## Description
 
 A simple *SelectListHandler* class written in GDScript that defines *SelectListHandler* as a type that provides an list API useful for selecting values on menus for projects developed with [Godot Engine](https://godotengine.org).

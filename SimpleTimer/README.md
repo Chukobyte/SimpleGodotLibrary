@@ -1,7 +1,5 @@
 # Simple Godot SimpleTimer
 
-*Version 1.0.0*
-
 ---------------------
 ## Description
 
