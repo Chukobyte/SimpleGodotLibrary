@@ -8,11 +8,6 @@ A simple *SimpleTimer* class written in GDScript that defines *SimpleTimer* as a
 -------------
 ## Properties
 
-```
-Timer _timer
-```
-Internal refernce to `Timer` object.
-
 -----------
 ## Methods:
 
@@ -46,6 +41,11 @@ float get_wait_time()
 ```
 Returns value for `_timer.wait_time`
 
+```
+void trigger_timeout()
+```
+Forces timer to stop and emit `timeout` signal.
+
 ----------
 ## Signals
 
@@ -59,7 +59,7 @@ Emitted when `_timer` reaches 0.
 
 Initialize array:  
 ```
-var stop_watch_timer := SimpleTimer.new(3)
+var stop_watch_timer := SimpleTimer.new(3.0)
 ```
 
 Connect signal:  

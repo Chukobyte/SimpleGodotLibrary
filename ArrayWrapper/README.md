@@ -1,9 +1,9 @@
-# Simple Godot SelectListHandler
+# Simple Godot ArrayWraper
 ---------------------
 
 ## Description
 
-A simple *SelectListHandler* class written in GDScript that defines *SelectListHandler* as a type that provides an list API useful for selecting values on menus for projects developed with [Godot Engine](https://godotengine.org).
+A simple *ArrayWraper* class written in GDScript that defines *ArrayWraper* as a type that provides an list API useful for adding guards to the array limits for projects developed with [Godot Engine](https://godotengine.org).
 
 ## Properties
 
@@ -54,7 +54,7 @@ Set `_index` to value in `index`
 
 Initialize array:  
 ```
-var options_list_handler := SelectListHandler.new(["Music", "Sound", "Back"])
+var options_list_handler := ArrayWraper.new(["Music", "Sound", "Back"])
 ```
 
 Example:  

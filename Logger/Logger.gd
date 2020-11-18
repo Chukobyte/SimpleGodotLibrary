@@ -1,4 +1,4 @@
-#Logger.gd
+# Logger.gd
 extends Reference
 
 class_name Logger
