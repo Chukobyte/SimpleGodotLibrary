@@ -9,6 +9,17 @@ A simple library of `Script Classes` written in GDScript for projects developed 
 
 -----------------------------------------------------------------------------------------------------------------------------
 
+## Instruction To Run Test Locally
+
+The `Test` folder contains scenes and scripts related to testing the functionality of the script class library.
+
+1. Download the latest version of [Godot](https://godotengine.org).
+2. Clone this repo into a local workspace.
+3. Import the project into Godot.
+4. Run `Test.tscn` scene.  It is the main scene for the project.  Output from the tests are printed to the console.
+
+-----------------------------------------------------------------------------------------------------------------------------
+
 ## Libraries
 
 ### Array2D
