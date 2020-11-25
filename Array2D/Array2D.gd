@@ -57,6 +57,9 @@ func clear() -> void:
 func empty() -> bool:
     return _array.empty()
 
+func to_string() -> String:
+    return str(_array)
+
 func duplicate() -> Array2D:
     var new_array : Array2D
     new_array = (load(get_script().resource_path) as GDScript).new(width(), height()) as Array2D

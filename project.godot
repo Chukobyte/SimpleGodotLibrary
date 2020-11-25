@@ -1,0 +1,65 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+_global_script_classes=[ {
+"base": "Reference",
+"class": "Array2D",
+"language": "GDScript",
+"path": "res://Array2D/Array2D.gd"
+}, {
+"base": "Reference",
+"class": "ArrayWrapper",
+"language": "GDScript",
+"path": "res://ArrayWrapper/ArrayWrapper.gd"
+}, {
+"base": "Reference",
+"class": "Logger",
+"language": "GDScript",
+"path": "res://Logger/Logger.gd"
+}, {
+"base": "Reference",
+"class": "SegmentCast2D",
+"language": "GDScript",
+"path": "res://SegmentCast2D/SegmentCast2D.gd"
+}, {
+"base": "Timer",
+"class": "SimpleTimer",
+"language": "GDScript",
+"path": "res://SimpleTimer/SimpleTimer.gd"
+}, {
+"base": "Node2D",
+"class": "Timeline",
+"language": "GDScript",
+"path": "res://Timeline/Timeline.gd"
+}, {
+"base": "Reference",
+"class": "Window",
+"language": "GDScript",
+"path": "res://Window/Window.gd"
+} ]
+_global_script_class_icons={
+"Array2D": "",
+"ArrayWrapper": "",
+"Logger": "",
+"SegmentCast2D": "",
+"SimpleTimer": "",
+"Timeline": "",
+"Window": ""
+}
+
+[application]
+
+config/name="Simple Godot Library"
+run/main_scene="res://Test/Test.tscn"
+config/icon="res://icon.png"
+
+[rendering]
+
+environment/default_environment="res://default_env.tres"

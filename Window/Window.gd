@@ -16,13 +16,13 @@ static func center() -> void:
     var window_size = OS.get_window_size()
     OS.set_window_position(screen_size * 0.5 - window_size * 0.5)
 
-func set_fullscreen(fullscreen := true) -> void:
+func set_fullscreen(viewport : Viewport, fullscreen := true) -> void:
     if fullscreen:
         OS.set_window_fullscreen(fullscreen)
     else:
-        set_windowed()
+        set_windowed(viewport)
 
-func set_windowed() -> void:
+func set_windowed(viewport : Viewport) -> void:
     var window_size := OS.get_screen_size()
 
     OS.set_borderless_window(false)
@@ -30,13 +30,13 @@ func set_windowed() -> void:
 
     if windowed_size <= window_size:
         OS.set_window_size(windowed_size)
-        Global.get_viewport().set_size(windowed_size)
+        viewport.set_size(windowed_size)
     else:
         # I set the windowed version to an arbitrary 80% of screen size here
         var scale : float = min(window_size.x / base_size.x, window_size.y / base_size.y) * 0.8
         var scaled_size : Vector2 = (base_size * scale).round()
         OS.set_window_size(scaled_size)
-        Global.get_viewport().set_size(scaled_size)
+        viewport.set_size(scaled_size)
 
     center()
 
